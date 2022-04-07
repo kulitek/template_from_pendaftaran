@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="bg-yellow-500 text-white text-center fixed inset-x-0 top-0 z-10">
+            <div class="container mx-auto grid grid-cols-10 p-3 sm:w-full md:w-5/12">
+                <div class="col-span-2 bg-white rounded-full h-10 w-10 p-1 mr-3 shadow-sm">
+                    <a href="">
+                    <img src="./img/logo.png" class="inline-block">
+                    </a>
+                </div>
+                <div class="col-span-8">
+                </div>
+                </div>
+        </div>
+    </header>
+    <div>
+        <div class="pb-20 pt-20">
+            <div class="container mx-auto grid grid-cols-1 p-5 sm:w-full md:w-5/12">
+    
+                <form @submit.prevent="login">
+                    <div class="bg-white rounded-md shadow-md p-5">
+                        <div class="text-xl">
+                            MASUK AKUN
+                        </div>
+                        <div class="border-2 border-gray-200 mt-3 mb-2"></div>
+    
+                        <div class="mb-5">
+                            <label class="mt-2">Nomor Rekam Medis</label>
+                            <input type="email" v-model="user.email"
+                                class="mt-2 appearance-none w-full bg-gray-200 border border-gray-200 rounded h-7 shadow-sm placeholder-gray-600 focus:outline-none focus:placeholder-gray-600 focus:bg-white focus-within:text-gray-600 p-5"
+                                placeholder="Alamat Email">
+                        </div>
+    
+                        <div class="mb-5">
+                            <label class="mt-2">Password (gunakan NIK)</label>
+                            <input type="password" v-model="user.password"
+                                class="mt-2 appearance-none w-full bg-gray-200 border border-gray-200 rounded h-7 shadow-sm placeholder-gray-600 focus:outline-none focus:placeholder-gray-600 focus:bg-white focus-within:text-gray-600 p-5"
+                                placeholder="Password">
+                        </div>
+    
+                        <div>
+                            <button
+                                class="bg-gray-700 py-1 px-3 text-white rounded-md shadow-md text-xl inline-block w-full focus:outline-none focus:bg-gray-900">MASUK</button>
+                        </div>
+    
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

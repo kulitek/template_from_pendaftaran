@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-300">
+    <header>
+        <div class="bg-yellow-500 text-white text-center fixed inset-x-0 top-0 z-10">
+            <div class="container mx-auto grid grid-cols-10 p-3 sm:w-full md:w-5/12">
+                <div class="col-span-2 bg-white rounded-full h-10 w-10 p-1 mr-3 shadow-sm">
+                    <a href="">
+                        <img src="./img/logo.png" class="inline-block">
+                    </a>
+                </div>
+                <div class="col-span-8">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- //content -->
+    <div>
+        <div class="pb-20 pt-20">
+            <div class="container mx-auto grid grid-cols-1 p-5 sm:w-full md:w-5/12">
+                <div class="bg-white rounded-md shadow-md p-5">
+                    <div class="text-xl text-center">
+                        Antrian
+                    </div>
+                    <div class="border-2 border-gray-200 mt-3 mb-2"></div>
+                    <div class="text-center text-8xl">
+                        06
+                    </div>
+                    <div class="text-center text-4xl pt-6">
+                        Poli Mata
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto grid grid-cols-1 p-5 sm:w-full md:w-5/12">
+                <div class="p-5">
+                    <div class="text-black " id="nomorcm">
+                        masukan nomor Rekam Medik
+                    </div>
+                        <div id="Rekam Medik">
+                        <input class="bg-white rounded-md shadow-md p-5 w-full mt-3" placeholder="Nomor Rekam Medik">
+                    </div>
+                   
+                </div>
+                <div class="p-5" id="cekrm">
+                    <a href="#" class="bg-green-400 p-2 rounded-lg">
+                        cek rekam medik
+                    </a>
+                </div>
+                <div class="border-2 border-gray-200 mt-3 mb-2"></div>
+                <div class="p-5" id="nama">
+                    <div class="text-black " id="nomorcm">
+                        Nama
+                    </div>
+                        <div id="Rekam Medik">
+                        <input class="bg-white rounded-md shadow-md p-5 w-full mt-3" >
+                    </div>
+                   
+                </div>
+                <div class="p-5" id="alamat">
+                    <div class="text-black ">
+                        alamat
+                    </div>
+                        <div >
+                        <input class="bg-white rounded-md shadow-md p-5 w-full mt-3" >
+                    </div>
+                   
+                </div>
+                <div class="p-5" id="alamat">
+                    <div class="text-black ">
+                        nik
+                    </div>
+                        <div >
+                        <input class="bg-white rounded-md shadow-md p-5 w-full mt-3" >
+                    </div>
+                   
+                </div>
+                <div class="p-5">
+                    <div class="text-black">
+                        Pilih Poliklinik
+                    </div>
+                    <div id="select-poli">
+                        <div class="mt-3">
+                            <select
+                                class="h-12 mt-1 text-sm text-black-700 w-full rounded-lg cursor-pointer outline-none ">
+                                <option class=" hidden">Pilih Poliklinik</option>
+                                <option>poli mata</option>
+                                <option>poli paru</option>
+                                <option>poli syaraf</option>
+                                <option>poli anak</option>
+                                <option>poli jiwa</option>
+                                <option>poli psikolog</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class="text-black " id="tanggal_booking">
+                        Pilih tanggal booking
+                    </div>
+                        <div id="select-tanggal-booking">
+                            <div class="datepicker relative form-floating mb-3 xl:w-96">
+                                <input type="text"
+                                  class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                  placeholder="Select a date" />
+                                <label for="floatingInput" class="text-gray-700">Select a date</label>
+                              </div>
+                        </div>
+                    <a href="transaksi.html" type="submit" class="font-bold w-full bg-green-600 rounded-full p-4 mt-10 text-center text-white hover:bg-white hover:text-green-500">
+                        booking 
+                    </a>
+                </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- //navigation -->
+    
+</body>
+
+</html>
